@@ -74,6 +74,7 @@ function bot() {
                 players.classList.remove("active"); //remove active class in players
                 allBox[randomBox].setAttribute("id", playerSign);
             }
+            selectWinner(); //calling selectWinner function
             allBox[randomBox].style.pointerEvents = "none";
             playBoard.style.pointerEvents = "auto"; //add pointerEvents auto in playboard so user can again click on box
         }
